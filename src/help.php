@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yunwuxin
- * Date: 2019/3/14
- * Time: 15:28
- */
 
-namespace yunwuxin\twig {
+namespace aspirantzhang\octopusTwigBridge {
 
     use think\Model;
     use Twig\Environment;
@@ -18,7 +12,6 @@ namespace yunwuxin\twig {
     {
 
         if ($object instanceof Model && $type != Template::METHOD_CALL) {
-
             if ($isDefinedTest) {
                 return isset($object[$item]);
             }

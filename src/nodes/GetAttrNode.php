@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\twig\nodes;
+namespace aspirantzhang\octopusTwigBridge\nodes;
 
 use Twig\Compiler;
 use Twig\Extension\SandboxExtension;
@@ -44,7 +44,7 @@ class GetAttrNode extends AbstractExpression
         }
 
         // This is the only line that should be different from GetAttrExpression::compile()
-        $compiler->raw('\yunwuxin\twig\twig_get_attribute($this->env, $this->source, ');
+        $compiler->raw('\aspirantzhang\octopusTwigBridge\twig_get_attribute($this->env, $this->source, ');
 
         if ($this->getAttribute('ignore_strict_check')) {
             $this->getNode('node')->setAttribute('ignore_strict_check', true);

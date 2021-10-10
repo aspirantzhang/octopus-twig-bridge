@@ -1,13 +1,4 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>　
-// +----------------------------------------------------------------------
 
 namespace think\view\driver;
 
@@ -20,7 +11,7 @@ use Twig\Loader\FilesystemLoader;
 use Twig\RuntimeLoader\FactoryRuntimeLoader;
 use Twig\TwigFilter;
 use Twig\TwigFunction;
-use yunwuxin\twig\Extension;
+use aspirantzhang\octopusTwigBridge\Extension;
 
 class Twig implements TemplateHandlerInterface
 {
@@ -113,7 +104,7 @@ class Twig implements TemplateHandlerInterface
 
         if (!empty($this->config['extensions'])) {
             foreach ($this->config['extensions'] as $extension) {
-                $twig->addExtension(new $extension);
+                $twig->addExtension(new $extension());
             }
         }
 

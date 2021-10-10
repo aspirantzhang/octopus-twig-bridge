@@ -1,9 +1,7 @@
-# Twig Template For ThinkPHP5
+Octopus Revision
+===
+![Do not use](https://img.shields.io/badge/Under%20development-Don't%20use-red)
 
-## 安装
-~~~
-composer require yunwuxin/think-twig
-~~~
+Integrate Twig into ThinkPHP to make it easy to use and expand.
 
-## 使用 
-配置文件里 `template.type=Twig` 即可
+> This Repo is forked from [yunwuxin/think-twig](https://github.com/yunwuxin/think-twig), great thanks to [yunwuxin](https://github.com/yunwuxin)'s excellent work. 

@@ -1,17 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yunwuxin
- * Date: 2019/3/14
- * Time: 15:12
- */
 
-namespace yunwuxin\twig;
+namespace aspirantzhang\octopusTwigBridge;
 
 use ReflectionClass;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigTest;
-use yunwuxin\twig\nodevisitors\GetAttrAdjuster;
+use aspirantzhang\octopusTwigBridge\nodevisitors\GetAttrAdjuster;
 
 class Extension extends AbstractExtension
 {
