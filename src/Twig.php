@@ -96,7 +96,7 @@ class Twig implements TemplateHandlerInterface
         }
 
         if (!empty($this->config['runtime'])) {
-            $twig->addRuntimeLoader(new $this->config['runtime']());
+            $twig->addRuntimeLoader(new $this->config['runtime']($this->app));
         }
 
         $twig->addExtension(new Extension());
