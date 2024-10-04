@@ -1,4 +1,4 @@
-Octopus Twig Bridge
+Thinkphp6 Twig Bridge
 ===
 ![Do not use](https://img.shields.io/badge/Under%20development-Don't%20use-red)
 
